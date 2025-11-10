@@ -4,7 +4,7 @@ export default function Countdown({ startSeconds }) {
   const [secondsLeft, setSecondsLeft] = useState(startSeconds);
 
   useEffect(() => {
-    if (secondsLeft <= 0) return; // Stop when it reaches 0
+    if (secondsLeft <= 0) return; // Stopper når det blir 0
 
     const timer = setInterval(() => {
       setSecondsLeft((prev) => prev - 1);
